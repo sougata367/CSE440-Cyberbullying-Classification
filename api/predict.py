@@ -61,7 +61,7 @@ class handler(BaseHTTPRequestHandler):
             self._send_json(
                 502,
                 {
-                    "detail": "The model inference request failed.",
+                    "detail": f"{exc.__class__.__name__}: {str(exc)}",
                     "error_type": exc.__class__.__name__,
                 },
             )
