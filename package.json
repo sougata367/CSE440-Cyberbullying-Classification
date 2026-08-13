@@ -1,0 +1,16 @@
+{
+  "name": "cse440-cyberbullying-classification",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
