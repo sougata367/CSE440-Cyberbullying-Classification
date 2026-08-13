@@ -1,0 +1,23 @@
+{
+  "project": "CSE440 Cyberbullying Multiclass Classification",
+  "best_model": "BERT Base",
+  "base_checkpoint": "bert-base-uncased",
+  "max_length": 64,
+  "num_labels": 6,
+  "test_accuracy": 0.9064,
+  "test_macro_f1": 0.897,
+  "labels": [
+    "age",
+    "ethnicity",
+    "gender",
+    "not_cyberbullying",
+    "other_cyberbullying",
+    "religion"
+  ],
+  "deployment": {
+    "frontend": "React + Vite",
+    "backend": "Vercel Python Functions",
+    "inference": "Hugging Face Inference Provider",
+    "environment_model_id": "HF_MODEL_ID"
+  }
+}
